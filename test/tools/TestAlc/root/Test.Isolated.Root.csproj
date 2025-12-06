@@ -12,6 +12,7 @@
 
     <!-- Deploy the produced assembly -->
     <PublishDir>..\..\Modules\IsolatedModule\Dependencies</PublishDir>
+    <RestorePackagesWithLockFile>true</RestorePackagesWithLockFile>
   </PropertyGroup>
 
   <ItemGroup>
