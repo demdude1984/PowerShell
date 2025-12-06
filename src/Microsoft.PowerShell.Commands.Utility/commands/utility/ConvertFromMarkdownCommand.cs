@@ -150,6 +150,10 @@ namespace Microsoft.PowerShell.Commands
 
             try
             {
+                if (filePath == null || filePath.Contains("../") || filePath.Contains(@"..\"))
+                {
+                    throw new ArgumentException("Invalid file path");
+                }
                 using (StreamReader reader = new(new FileStream(filePath, FileMode.Open, FileAccess.Read, FileShare.Read)))
                 {
                     string mdContent = await reader.ReadToEndAsync();
