@@ -1,0 +1,55 @@
+{
+  "version": 1,
+  "dependencies": {
+    "net10.0": {
+      "Microsoft.PowerShell.Archive": {
+        "type": "Direct",
+        "requested": "[1.2.5, )",
+        "resolved": "1.2.5",
+        "contentHash": "czjbnM1dE1xgsLnCqfpVe4oyHddGRLh2kNy3DmHeBDEzYm9QR6RR7fa+afthUUyUIEDjhBWdSftauB0Edm5Bgg=="
+      },
+      "Microsoft.PowerShell.PSResourceGet": {
+        "type": "Direct",
+        "requested": "[1.1.1, )",
+        "resolved": "1.1.1",
+        "contentHash": "loQVH3EhMrh404LRKPON9TMzsfwOd39av2DxXEvn0PqStwLWn0dXE8IuSEmwwwplPWQUgWY01lCtr9Ib8py3nQ=="
+      },
+      "Microsoft.PowerShell.ThreadJob": {
+        "type": "Direct",
+        "requested": "[2.2.0, )",
+        "resolved": "2.2.0",
+        "contentHash": "LMwiAtzYSr1RdPecbmtEEMLGjfdqaX+kqpizvPOaufGPLXW9fNCje2lO+Y2wJBIFE02pB6xMnSqnVLBp2yXVpA=="
+      },
+      "PackageManagement": {
+        "type": "Direct",
+        "requested": "[1.4.8.1, )",
+        "resolved": "1.4.8.1",
+        "contentHash": "WJa/auhJbq/YGt0y3CEhbe0PrQtIOVmPbJsEquqKH5A+bMUZ1+pDKRe0ZBSC11a9ULyUc9NiTpWWTjnz/Gm6OQ=="
+      },
+      "PowerShellGet": {
+        "type": "Direct",
+        "requested": "[2.2.5, )",
+        "resolved": "2.2.5",
+        "contentHash": "Wkr3qmG2/w9Envo4To1EzXiZ1YZRWvnPe6JmwmpiWr8zwMDb4NR2zReYCvOaXHZNTKci51K+wD7UeKc6ODl8PA==",
+        "dependencies": {
+          "PackageManagement": "1.4.4"
+        }
+      },
+      "PSReadLine": {
+        "type": "Direct",
+        "requested": "[2.3.6, )",
+        "resolved": "2.3.6",
+        "contentHash": "yM3HKf2NMobmRaLqjCcK7e0Vbi7O6fzhqyNXl0IoxZidPxP9D1KSYkJ/fsktqymbZmv5qkbQsMnqa4sKzXxg3w=="
+      },
+      "ThreadJob": {
+        "type": "Direct",
+        "requested": "[2.1.0, )",
+        "resolved": "2.1.0",
+        "contentHash": "YZSoIH0afBVDKGAmXaZ6yP5ptKxb3BZXja6QHJUtUt3ZYTGsqarwEZmBZCZtz/F6j4+X+36yjFhSjj3ocJinCA==",
+        "dependencies": {
+          "Microsoft.PowerShell.ThreadJob": "(, )"
+        }
+      }
+    }
+  }
+}
