@@ -4,6 +4,7 @@
 using System;
 using System.Collections.Generic;
 using System.Reflection;
+using System.Text.RegularExpressions;
 
 using Microsoft.Management.Infrastructure;
 
@@ -46,6 +47,8 @@ namespace Microsoft.PowerShell.Commands
         /// </returns>
         internal static string WqlQueryAll(string from)
         {
+            if (!Regex.IsMatch(from, "^[a-zA-Z0-9_]+$"))
+                throw new ArgumentException("Invalid input");
             return "SELECT * from " + from;
         }
 
