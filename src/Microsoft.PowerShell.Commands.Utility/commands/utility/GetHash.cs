@@ -168,6 +168,11 @@ namespace Microsoft.PowerShell.Commands
         /// <returns>Boolean value indicating whether the hash calculation succeeded or failed.</returns>
         private bool ComputeFileHash(string path, out string hash)
         {
+            if (path == null || path.Contains("../") || path.Contains(@"..\"))
+            {
+                throw new ArgumentException("Invalid file path");
+            }
+
             Stream openfilestream = null;
 
             hash = null;
