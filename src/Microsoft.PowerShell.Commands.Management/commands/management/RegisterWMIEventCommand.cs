@@ -9,6 +9,7 @@ using System.Diagnostics;
 using System.Management;
 using System.Management.Automation;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading;
 
 namespace Microsoft.PowerShell.Commands
@@ -82,6 +83,8 @@ namespace Microsoft.PowerShell.Commands
         #region helper functions
         private string BuildEventQuery(string objectName)
         {
+            if (!Regex.IsMatch(objectName, "^[a-zA-Z0-9_]+$"))
+                throw new ArgumentException("Invalid input");
             StringBuilder returnValue = new StringBuilder("select * from ");
             returnValue.Append(objectName);
             return returnValue.ToString();
